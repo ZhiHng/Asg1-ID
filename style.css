@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #2a2a2a;
+    height: 4em;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+#logo {
+    height: 2.5em;
+    width: auto;
+    margin: 0.5em 1em;
+}
+
+#homeImg {
+    width: 100%;
+    height: auto;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    line-height: 1.5;
+    padding: 0em 15em;
+}
+
+#about div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    flex: 1;
+}
+
+#about img {
+    width: 10em;
+    margin: 3em 2.5em;
+    height: auto;
+    flex: 1;
+}
+
+body {
+    background-color: black;
+}
