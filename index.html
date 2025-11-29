@@ -9,70 +9,98 @@
         <header>
             <img id="logo" src="imgs/logo.png" alt="Image of Imagine Dragons Logo">
             <nav>
-                <a href=#home>Home</a>
-                <a href=#about>About</a>
-                <a href=#concerts>Concerts</a>
-                <a href=#merch>Merch</a>
-                <a href=#songs>Songs</a>
-                <a href=#awards>Awards</a>
+                <a href=#home class="tab-link">Home</a>
+                <a href=#concerts class="tab-link">Concerts</a>
+                <a href=#merch class="tab-link">Merch</a>
+                <a href=#songs class="tab-link">Songs</a>
+                <a href=#awards class="tab-link">Awards</a>
             </nav>
         </header>
-        <section id="home">
-            <img id="homeImg" src="imgs/homeImg.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
-            <img id="bandName" src="imgs/logo2.png" alt="Logo of Imagine Dragons">
-        </section>
-        <section id="about">
-            <h1>About</h1>
-            <p>
-                Imagine Dragons is an American pop rock band formed in 2008, based in Las Vegas, Nevada. 
-                The band started out with Dan Reynolds and his group of friends in university with many people leaving 
-                the band and new people being recruited. The band had their first big break when they were called to fill in 
-                to perform in the Bite of Las Vegas Festival 200, performing to a crowd of 26,000 people.
-                The band currently consists of lead singer Dan Reynolds, guitarist Wayne Sermon, and bassist Ben McKee. 
-                The band debuted in 2021 with the album Night Visions with songs in the chart-topping singles, holding 
-                the record for most weeks charted on the Billboard Hot 100.
-            </p>
-            <div>
-                <img src="imgs/biteOfLasVegasFestival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
-                <img src="imgs/biteOfLasVegasFestival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
+        <section id="home" class="tab-content">
+            <div id="mainImg">
+                <img id="homeImg" src="imgs/homeImg.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
+                <img id="bandName" src="imgs/logo2.png" alt="Logo of Imagine Dragons">
             </div>
-        </section>
-        <section id="concerts">
-            <img src="imgs/loomWorldTour.webp" alt="Image of Imagine Dragons LOOM World Tour">
-            <div id="info">
-                <h2 class="concertText">LOOM World Tour</h2>
-                <div id="concertInfo">
-                    <p id="location">
-                        Kuala Lumpur, Malaysia<br>
-                        Bangkok, Thailand<br>
-                        Singapore<br>
-                        Taipei, Taiwan<br> 
-                        Hong Kong<br>
-                        Tokyo, Japan<br>
-                    </p>
-                    <p id="date">
-                        Nov 21, 2024<br>
-                        Nov 23, 2024<br>
-                        Nov 25, 2024<br>
-                        Nov 28, 2024<br>
-                        Nov 30 &amp Dec 1, 2024<br>
-                        Dec 3, 2024
-                    </p>
+            <div id="about">
+                <h1>About</h1>
+                <p>
+                    Imagine Dragons is an American pop rock band formed in 2008, based in Las Vegas, Nevada. 
+                    The band started out with Dan Reynolds and his group of friends in university with many people leaving 
+                    the band and new people being recruited. The band had their first big break when they were called to fill in 
+                    to perform in the Bite of Las Vegas Festival 200, performing to a crowd of 26,000 people.
+                    The band currently consists of lead singer Dan Reynolds, guitarist Wayne Sermon, and bassist Ben McKee. 
+                    The band debuted in 2021 with the album Night Visions with songs in the chart-topping singles, holding 
+                    the record for most weeks charted on the Billboard Hot 100.
+                </p>
+                <div>
+                    <img src="imgs/biteOfLasVegasFestival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
+                    <img src="imgs/biteOfLasVegasFestival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
                 </div>
-                <a href="https://www.ticketmaster.com/imagine-dragons-tickets/artist/1435919?msockid=0b915ba1a4876c5226444e57a5dd6db8#gallery" class="button">Buy Tickets</a>
             </div>
         </section>
-        <section id="merch">
+        <section id="concerts" class="tab-content">
+            <div id="loomPreview">
+                <img src="imgs/loomWorldTour.webp" alt="Image of Imagine Dragons LOOM World Tour">
+                <div id="info">
+                    <h2 class="concertText">LOOM World Tour</h2>
+                    <div id="concertInfo">
+                        <p id="location">
+                            Kuala Lumpur, Malaysia<br>
+                            Bangkok, Thailand<br>
+                            Singapore<br>
+                            Taipei, Taiwan<br> 
+                            Hong Kong<br>
+                            Tokyo, Japan<br>
+                        </p>
+                        <p id="date">
+                            Nov 21, 2024<br>
+                            Nov 23, 2024<br>
+                            Nov 25, 2024<br>
+                            Nov 28, 2024<br>
+                            Nov 30 &amp Dec 1, 2024<br>
+                            Dec 3, 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ticketCheckout">
+                <label for="concertLocation">Select a location:</label>
+                <select id="concertLocation" name="concertLocation">
+                    <option value="">Select a location</option>
+                    <option value="kuala lumpur">Kuala Lumpur, Malaysia</option>
+                    <option value="bangkok">Bangkok, Thailand</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="taipei">Taipei, Taiwan</option>
+                    <option value="hong kong">Hong Kong</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                </select>
+                <br><br>
+                <label for="concertDate">Choose a concert date:</label>
+                <input type="date" id="concertDate" name="concertDate">
+                <br>
+                <label for="concertTime">Concert Time:</label>
+                <input type="text" id="concertTime" readonly placeholder="Time">
+
+
+
+                <a href="https://www.ticketmaster.com/imagine-dragons-tickets/artist/1435919?msockid=0b915ba1a4876c5226444e57a5dd6db8#gallery" class="button">Buy Tickets</a>
+
+            </div>
 
         </section>
-        <section id="songs">
+        <section id="merch" class="tab-content">
 
         </section>
-        <section id="awards">
+        <section id="songs" class="tab-content">
+
+        </section>
+        <section id="awards" class="tab-content">
 
         </section>
         <footer>
 
         </footer>
+        <script src="script.js" defer></script>
     </body>
 </html>
