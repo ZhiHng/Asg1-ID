@@ -4,6 +4,7 @@
         <title>Imagine Dragons Website</title>
         <link href="Normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
@@ -17,11 +18,11 @@
             </nav>
         </header>
         <section id="home" class="tab-content">
-            <div id="mainImg">
+            <section id="mainImg">
                 <img id="homeImg" src="imgs/homeImg.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
                 <img id="bandName" src="imgs/logo2.png" alt="Logo of Imagine Dragons">
-            </div>
-            <div id="about">
+            </section>
+            <section id="about">
                 <h1>About</h1>
                 <p>
                     Imagine Dragons is an American pop rock band formed in 2008, based in Las Vegas, Nevada. 
@@ -36,10 +37,10 @@
                     <img src="imgs/biteOfLasVegasFestival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
                     <img src="imgs/biteOfLasVegasFestival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
                 </div>
-            </div>
+            </section>
         </section>
         <section id="concerts" class="tab-content">
-            <div id="loomPreview">
+            <section id="loomPreview">
                 <img src="imgs/loomWorldTour.webp" alt="Image of Imagine Dragons LOOM World Tour">
                 <div id="info">
                     <h2 class="concertText">LOOM World Tour</h2>
@@ -62,9 +63,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
             
-            <div id="ticketCheckout">
+            <section id="ticketCheckout">
                 <label for="concertLocation">Select a location:</label>
                 <select id="concertLocation" name="concertLocation">
                     <option value="">Select a location</option>
@@ -84,13 +85,92 @@
 
 
 
-                <a href="https://www.ticketmaster.com/imagine-dragons-tickets/artist/1435919?msockid=0b915ba1a4876c5226444e57a5dd6db8#gallery" class="button">Buy Tickets</a>
+                <input type="button" class="buttonConcert">Purchase</input>
 
-            </div>
-
+            </section>
         </section>
         <section id="merch" class="tab-content">
-
+            <section id="merchShop">
+                <a href=#merchCheckout><img src="imgs/shoppingBag.png"></a>
+                <div class="tshirt">
+                    <img src="imgs/merch/tshirt/feelItInMyBonesSkeletonTee.png" alt="Feel It In My Bones Skeleton Tee">
+                    <p>Feel It In My Bones Skeleton Tee<br>$30</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="tshirt">
+                    <img src="imgs/merch/tshirt/hollywoodBowlBlueEventTee.png" alt="Hollywood Bowl Blue Event Tee">
+                    <p>Hollywood Bowl Blue Event Tee<br>$35</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="tshirt">
+                    <img src="imgs/merch/tshirt/itsTimeBrownTieDyeLongSleeve.png" alt="Its Time Brown Tie Dye Long Sleeve">
+                    <p>Its Time Brown Tie Dye Long Sleeve<br>$40</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="tshirt">
+                    <img src="imgs/merch/tshirt/liveHollywoodBowlFilmSunTee.png" alt="Live Hollywood Bowl Film Sun Tee">
+                    <p>Live Hollywood Bowl Film Sun Tee<br>$30</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="tshirt">
+                    <img src="imgs/merch/tshirt/wingsBrownCrewNeck.png" alt="Wings Brown Crew Neck">
+                    <p>Wings Brown Crew Neck<br>$25</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="hoodie">
+                    <img src="imgs/merch/hoodie/bonesLetterHoodie.webp" alt="Bones Letter Hoodie">
+                    <p>Bones Letter Hoodie<br>$50</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="hoodie">
+                    <img src="imgs/merch/hoodie/bonesSkellyHoodie.png" alt="Bones Skelly Hoodie">
+                    <p>Bones Skelly Hoodie<br>$50</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="hoodie">
+                    <img src="imgs/merch/hoodie/loomButterflyTanHoodie.webp" alt="Loom Butterfly Tan Hoodie">
+                    <p>Loom Butterfly Tan Hoodie<br>$50</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="hoodie">
+                    <img src="imgs/merch/hoodie/mercuryGlobePulloverHoodie.webp" alt="Mercury Globe Pullover Hoodie">
+                    <p>Mercury Globe Pullover Hoodie<br>$55</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="hoodie">
+                    <img src="imgs/merch/hoodie/theBrightestSunBeigeHoodie.webp" alt="The Brightest Sun Beige Hoodie">
+                    <p>The Brightest Sun Beige Hoodie<br>$45</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="accessories">
+                    <img src="imgs/merch/accessories/idBonesSilverNecklace.webp" alt="ID Bones Silver Necklace">
+                    <p>ID Bones Silver Necklace<br>$80</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="accessories">
+                    <img src="imgs/merch/accessories/loomBlanket.webp" alt="Loom Blanket">
+                    <p>Loom Blanket<br>$80</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="accessories">
+                    <img src="imgs/merch/accessories/loomyDragonOrnament.webp" alt="Loomy Dragon Ornament">
+                    <p>Loomy Dragon Ornament<br>$30</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="accessories">
+                    <img src="imgs/merch/accessories/reverseDragonsCorduroyHat.webp" alt="Reverse Dragons Corduroy Hat">
+                    <p>Reverse Dragons Corduroy Hat<br>$20</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+                <div class="accessories">
+                    <img src="imgs/merch/accessories/takeMeToTheBeachAcrylicMagnet.webp" alt="Take Me To The Beach Acrylic Magnet">
+                    <p>Take Me To The Beach Acrylic Magnet<br>$25</p>
+                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                </div>
+            </section>
+            <section id="merchCheckout">
+                    
+            </section>
         </section>
         <section id="songs" class="tab-content">
 

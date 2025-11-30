@@ -1,3 +1,19 @@
+html {
+    font-size: clamp(14px, 1vw, 22px);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .tab-content {
     display: none !important;
 }
@@ -54,7 +70,8 @@ nav a {
     z-index: 10;
     position: absolute;
     padding: 5%;
-    width: auto;
+    width: 100%;
+    height: auto;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -78,6 +95,7 @@ nav a {
     justify-content: center;
     flex: 1;
     padding: 0% 2.5%;
+    flex-direction: row;
 }
 
 #about img {
@@ -122,23 +140,6 @@ section {
     flex-direction: row;
 }
 
-@media screen and (max-width: 576px) {
-    #loomPreview {
-        flex-direction: column;
-        position: static;
-    }
-
-    #concerts img {
-        width: 100%;
-    }
-
-    #info {
-        position: static;
-        width: 100%;
-        height: 20rem;
-    }
-}
-
 .concertText {
     margin: 0% 5% 0% 18%;
     color: rgb(200, 200, 200);
@@ -167,7 +168,7 @@ section {
     text-align: left;
 }
 
-.button {
+.buttonConcert {
     display: inline-block;
     margin: 0% 5% 0% 18%;
     padding: 2%;
@@ -190,8 +191,6 @@ section {
     font-size: larger;
 }
 
-
-
 #ticketCheckout select, input {
     background-color: #2a2a2a;
     color: rgb(200, 200, 200);
@@ -199,4 +198,107 @@ section {
 
 label {
     color: rgb(200, 200, 200);
+    font-size: 1.5rem;
+}
+
+#merch {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+#merchShop {
+    display: flex;
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+#merchShop div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 487.5px;
+    margin: 2%;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    line-height: 1.5rem;
+    justify-content: space-between;
+}
+
+#merchShop img {
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+#merchShop p {
+    font-size: 1.2rem;
+}
+
+#merchShop a {
+    position: fixed;
+    top: 5.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+#merchShop a img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: clamp(8px, 2vw, 16px);
+    }
+    #loomPreview {
+        flex-direction: column;
+        position: static;
+    }
+
+    #concerts img {
+        width: 100%;
+    }
+
+    #info {
+        top: 5%;
+        position: static;
+        width: 100%;
+        height: 20rem;
+        background: black
+    }
+    .concertText {
+        margin: 4% 0% 0% 0%;
+        color: rgb(200, 200, 200);
+        text-align: center;
+        line-height: 1.5;
+    }
+    #concertInfo {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        line-height: 2.5;
+    }
+
+    #about div {
+        flex-direction: column;
+    }
+
+    #about img {
+        width: 80%;
+        margin: 3% 2.5% 5% 2.5%;
+        height: auto;
+        flex: 1;
+    }
+
+    #merchShop div {
+        width: 150px;
+        height: 243.75px;
+    }
 }
