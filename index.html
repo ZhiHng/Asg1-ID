@@ -5,6 +5,9 @@
         <link href="Normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -12,9 +15,16 @@
             <nav>
                 <a href=#home class="tab-link">Home</a>
                 <a href=#concerts class="tab-link">Concerts</a>
-                <a href=#merch class="tab-link">Merch</a>
+                <div id="merchDropdown">
+                    <a id="navMerch">Merch</a>
+                    <div id="merchSubmenus">
+                        <a href=#merch class="tab-link" id="navAllMerch">All Merch</a>
+                        <a href=#merch class="tab-link" id="navTShirt">T-Shirts</a>
+                        <a href=#merch class="tab-link" id="navHoodie">Hoodies</a>
+                        <a href=#merch class="tab-link" id="navAccessories">Accessories</a>
+                    </div>
+                </div>
                 <a href=#songs class="tab-link">Songs</a>
-                <a href=#awards class="tab-link">Awards</a>
             </nav>
         </header>
         <section id="home" class="tab-content">
@@ -37,6 +47,35 @@
                     <img src="imgs/biteOfLasVegasFestival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
                     <img src="imgs/biteOfLasVegasFestival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
                 </div>
+                <p>
+                    The band finished recording their debut album Night Visions in the summer of 2012 at Studio X inside Palms 
+                    Casino Resort and released the album in the United States on September 4, 2012. It peaked at No. 2 on the 
+                    Billboard 200 chart with first week sales in excess of 83,000 copies, the highest charting for a debut rock 
+                    album since 2006. The album also reached No. 1 on the Billboard Alternative and Rock Album charts as 
+                    well as the top ten on the Albums charts of many countries. It won a Billboard Music Award for Top Rock Album 
+                    and was nominated for the Juno Award for International Album of the Year. Night Visions is certified 
+                    platinum in the US by the Recording Industry Association of America as well as many other countries. 
+                    The album produced three tracks that reached the Billboard Top 40, four tracks in the ARIA Top 40, 
+                    and five tracks charting in the UK Top 40.
+                </p>
+                <div class="songHighlights">
+                    <img src="imgs/believer.jpg" alt="Believer by Imagine Dragons Thumbnail">
+                    <p>
+                        Beliver by Imagine Dragons was released on February 1st 2017 and serves as the lead single from their third studio album, Evolve.
+                        It currently has about 2.9 billion views on Youtube and won Top Rock Song at the 2018 Billboard Music Awards.
+                    </p>
+                </div>
+                <div class="songHighlights">
+                    <img src="imgs/thunder.jpg" alt="Thunder by Imagine Dragons Thumbnail">
+                    <p>
+                        Thunder by Imagine Dragons was released on the April 27th 2017 and is the second single of their third studio album, Evolve.
+                        It currently has about 2.3 billion view on Youtube and earned Imagine Dragons a Grammy nomination which contributed to them winning 
+                        an award for Top Rock Artist 2018.
+                    </p>
+                </div>
+            </section>
+            <section id="contacts">
+                
             </section>
         </section>
         <section id="concerts" class="tab-content">
@@ -64,33 +103,51 @@
                     </div>
                 </div>
             </section>
-            
             <section id="ticketCheckout">
-                <label for="concertLocation">Select a location:</label>
-                <select id="concertLocation" name="concertLocation">
-                    <option value="">Select a location</option>
-                    <option value="kuala lumpur">Kuala Lumpur, Malaysia</option>
-                    <option value="bangkok">Bangkok, Thailand</option>
-                    <option value="singapore">Singapore</option>
-                    <option value="taipei">Taipei, Taiwan</option>
-                    <option value="hong kong">Hong Kong</option>
-                    <option value="tokyo">Tokyo, Japan</option>
-                </select>
-                <br><br>
-                <label for="concertDate">Choose a concert date:</label>
-                <input type="date" id="concertDate" name="concertDate">
-                <br>
-                <label for="concertTime">Concert Time:</label>
-                <input type="text" id="concertTime" readonly placeholder="Time">
-
-
-
-                <input type="button" class="buttonConcert">Purchase</input>
-
+                <div id="concertDetails">
+                    <h3>Concert Details</h3>
+                    <div>
+                        <label for="concertLocation">Select a location:</label>
+                        <select id="concertLocation" name="concertLocation">
+                            <option value="">Select a location</option>
+                            <option value="kuala lumpur">Kuala Lumpur, Malaysia</option>
+                            <option value="bangkok">Bangkok, Thailand</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="taipei">Taipei, Taiwan</option>
+                            <option value="hong kong">Hong Kong</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="concertDate">Choose a concert date:</label>
+                        <input type="date" id="concertDate" name="concertDate">
+                    </div>
+                    <div>
+                        <label for="concertTime">Concert Time:</label>
+                        <input type="text" id="concertTime" readonly placeholder="Time">
+                    </div>
+                </div>
+                <div id="paymentDetailsC">
+                    <h3>Your Details</h3>
+                    <input type="text" id="emailConcert" placeholder="Enter your email">
+                    <input type="text" id="nameConcert" placeholder="Enter your full name">
+                    <input type="text" id="addressConcert" placeholder="Enter your address">
+                    <input type="text" id="creditcardConcert" placeholder="Enter your credit card information">
+                    <input type="text" id="ccvConcert" placeholder="CCV">
+                    <p id="errorMsgConcert" style="color:red;"></p>
+                </div>
+                <input type="button" class="buttonConcert" value="Purchase">
             </section>
         </section>
         <section id="merch" class="tab-content">
+            <div id="category">
+                <h1 id="AllMerch">All Merch</h1>
+                <h1 id="TShirt">T-Shirts</h1>
+                <h1 id="Hoodie">Hoodies</h1>
+                <h1 id="Accessories">Accessories</h1>
+            </div>
             <section id="merchShop">
+                
                 <a href=#merchCheckout><img src="imgs/shoppingBag.png"></a>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/feelItInMyBonesSkeletonTee.png" alt="Feel It In My Bones Skeleton Tee">
@@ -169,17 +226,31 @@
                 </div>
             </section>
             <section id="merchCheckout">
-                    
+                <div id="paymentDetails">
+                    <h3>Your Details</h3>
+                    <input type="text" id="email" placeholder="Enter your email">
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <input type="text" id="address" placeholder="Enter your address">
+                    <input type="text" id="creditcard" placeholder="Enter your credit card information">
+                    <input type="text" id="ccv" placeholder="CCV">
+                    <p id="errorMsg" style="color:red;"></p>
+                </div>
+                <div id="cartSection">
+                    <h3>Your Cart</h3>
+                    <textarea id="cart" readonly placeholder="Your Cart is Empty"></textarea>
+                    <div>
+                        <input type="button" id="clearCart" value="Empty Cart">
+                        <input type="button" id="purchaseMerch" value="Purchase">
+                    </div>    
+                </div>
             </section>
         </section>
         <section id="songs" class="tab-content">
 
         </section>
-        <section id="awards" class="tab-content">
-
-        </section>
         <footer>
-
+            <p>Copyright &copy 2025 Imagine Dragons Music</p>
+            <p>Last Updated 7 December 2025</p>
         </footer>
         <script src="script.js" defer></script>
     </body>
