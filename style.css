@@ -565,6 +565,11 @@ label {
 		height: auto;
 		margin: 0.5rem;
 	}
+	#songs video {
+		margin: 0.2rem 1.5rem;
+		width: 42.5rem !important;
+		height: 23.90625rem !important;
+	}
 }
 @media (max-width: 800px) {
 	#songs video {
