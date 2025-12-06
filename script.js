@@ -1,3 +1,4 @@
+//Show/Hide tabs
 const links = document.querySelectorAll('.tab-link');
 const contents = document.querySelectorAll('.tab-content');
 
@@ -22,6 +23,7 @@ links.forEach(link => {
   	});
 });
 
+//Connecting the 3 inputs of concert details
 const Clocation = document.getElementById("concert-location");
 const dateInput = document.getElementById("concert-date");
 const timeInput = document.getElementById("concert-time");
@@ -112,6 +114,7 @@ dateInput.addEventListener("change", function() {
 	}
 });
 
+//Merch Cart system
 const cartText = document.getElementById('cart')
 const addToCart = document.querySelectorAll('.button-merch')
 var cart = [] //clears cart when website loads
@@ -142,6 +145,7 @@ clearCart.addEventListener('click', function() {
 	cartText.value = '';
 });
 
+//Merch dropdown tabs filter
 const merchTabs = document.querySelectorAll('#merch-dropdown div a')
 const category = document.querySelector('#category')
 const merchType = document.querySelectorAll('#merch-shop div')
@@ -171,6 +175,7 @@ merchTabs.forEach(dropdown => {
 	});
 });
 
+//Validation for payment for concert and merch tabs
 const purchaseMerch = document.getElementById('purchase-merch')
 const errorMsg = document.getElementById('error-msg')
 
@@ -287,7 +292,8 @@ purchaseTicket.addEventListener('click', function() {
 	timeInput.value = '';
 	Clocation.value = '';
 });
-  
+
+//Resetting video when switching tabs 
 const vids = document.querySelectorAll("video");
 
 vids.forEach(vid => {
@@ -296,7 +302,6 @@ vids.forEach(vid => {
 		vid.pause();
 		vid.load(); //refreshes the video so change the frame to the thumbnail
 	});
-	
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			if (!entry.isIntersecting) { //video not on screen (switch tabs)
@@ -306,7 +311,6 @@ vids.forEach(vid => {
 			}
 		});
 	});
-
 	observer.observe(vid); //check if the video is on the screen
 });
 
