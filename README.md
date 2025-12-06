@@ -48,7 +48,7 @@ This website is made for Imagine Dragons, a rock band. Therefore, I felt that th
     3. Try to change the date for Hong Kong
     4. Verify that the time for Tokyo is 7.00pm local time while the rest is 8.00pm local time
     5. Try to submit the form when the location is not selected and verify there is an error
-    6. Try to clear the date after selecting the location and submitting the form and verify there is an error
+    6. Try to clear the date after selecting the location and submitting the form and verify there is an error and that the time input is also cleared
 
 - Payment detials form:
     1. Go to the "Concert" and "Merch" page
@@ -62,6 +62,7 @@ This website is made for Imagine Dragons, a rock band. Therefore, I felt that th
     2. Try to click on the shopping bag and verify it scrolls to the cart
     3. Try to add items to the cart by clicking add to cart for some merch items and verify it shows up in the cart with the name and the total price of all the items
     4. Try to clear the cart and verify the items are gone
+    5. Try to purchase when cart is empty and verify that nothing happens and there is no popup
 
 - Filter merch tab:
     1. Go to the "Merch" tab

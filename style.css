@@ -274,8 +274,6 @@ section {
     margin-left: 2%;
 }
 
-
-
 #mainImg {
     position: relative;
     flex: 1;
@@ -632,7 +630,7 @@ label {
     }
 
     #contacts {
-        height: 4rem;
+        height: 8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -640,18 +638,18 @@ label {
         background: #181818;
     }
 
+    #socials {
+        display: flex;
+        flex-wrap: wrap;
+        width: 14rem;
+        margin-right: 0rem;
+    }
+
     #contacts p {
         color: rgb(200, 200, 200);
         font-size: 0.8rem;
         margin-left: 1rem;
-        line-height: 1.5;
-    }
-
-    #socials {
-        display: flex;
-        flex-wrap: wrap;
-        width: 21rem;
-        margin-right: 1rem;
+        line-height: 2;
     }
 
     #contacts img {
@@ -699,5 +697,23 @@ label {
     #cartSection div {
         height: 5rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #contacts {
+        height: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #181818;
+    }
+
+    #socials {
+        display: flex;
+        flex-wrap: wrap;
+        width: 11rem;
+        margin-right: 0rem;
     }
 }
