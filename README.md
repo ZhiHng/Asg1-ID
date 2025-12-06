@@ -86,7 +86,7 @@ The photos used in this site were obtained from ...
 - https://shop.imaginedragonsmusic.com/pages/tour
 - https://www.youtube.com/@ImagineDragons/videos
 - https://www.flaticon.com/
-- https://shop.imaginedragonsmusic.com/
+- https://shop.imaginedragonsmusic.com/collections/merch
 - https://chatgpt.com/
 
 ### Acknowledgements
