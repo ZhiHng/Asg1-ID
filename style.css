@@ -169,6 +169,35 @@ nav a {
     margin: 0 0 2rem 0!important;
 }
 
+#contacts {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+}
+
+#contacts p {
+    color: rgb(200, 200, 200);
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+#socials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 21rem;
+    margin-right: 1rem;
+}
+
+#contacts img {
+    width: 2.5rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
 body {
     background-color: black;
 }
@@ -248,7 +277,7 @@ section {
 }
 
 #concertDetails {
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     margin-right: 0 !important;
@@ -258,8 +287,13 @@ section {
 #concertDetails div {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     font-size: 1rem;
+}
+
+#concertDetails div label {
+    margin-right: 0.4rem;
 }
 
 #ticketCheckout {
@@ -445,6 +479,33 @@ label {
     border-width: 0.2rem;
 }
 
+#songs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: rgb(200, 200, 200);
+    width: 80%;
+    margin: 3rem auto;
+}
+
+#songs section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#songs video {
+    margin: 0.2rem 1.5rem;
+    width: 30rem;
+    height: 16.875rem;
+}
+
+#songs p {
+    margin-bottom: 2.5rem;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: clamp(8px, 2vw, 16px);
@@ -550,9 +611,62 @@ label {
         width: 80%;
         margin: 0 0 2rem 0!important;
     }
+
+    #songs section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    #songs video {
+        margin: 1.5rem 0 !important;
+    }
+
+    #contacts {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #181818;
+    }
+
+    #contacts p {
+        color: rgb(200, 200, 200);
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        line-height: 1.5;
+    }
+
+    #socials {
+        display: flex;
+        flex-wrap: wrap;
+        width: 21rem;
+        margin-right: 1rem;
+    }
+
+    #contacts img {
+        width: 2.5rem;
+        height: auto;
+        margin: 0.5rem;
+    }
 }
+    
 
 @media (max-width: 800px) {
+    #songs video {
+        width: 34rem;
+        height: 19.125rem;
+        margin: 0.8rem;
+    }
+
+    #songs {
+        width: 85.5%;
+        margin: 3rem auto;
+    }
+
     #merchCheckout {
         justify-content: space-evenly;
         flex-direction: column;

@@ -293,3 +293,26 @@ purchaseTicket.addEventListener('click', function() {
 	timeInput.value = '';
 	Clocation.value = '';
 });
+  
+const vids = document.querySelectorAll("video");
+
+vids.forEach(vid => {
+	vid.addEventListener("ended", () => {
+		vid.currentTime = 0;
+		vid.pause();
+		vid.load();
+	});
+	
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			if (!entry.isIntersecting) {
+				vid.currentTime = 0;
+				vid.pause();
+				vid.load();
+			}
+		});
+	});
+
+	observer.observe(vid);
+});
+
