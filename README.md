@@ -72,7 +72,7 @@ This website is made for Imagine Dragons, a rock band. Therefore, I felt that th
 On different browsers, the concert details, payment of concert tickets, merch and buttons may look slightly different. The website works on different screen sizes down to 320px width, therefore it works on almost all phones even small, old phones. On screens with a width of 600px and lower will have the elements slightly enlarged and stack in columns instead of rows for most sections.
 
 ### Problems
-1. Embeding Youtube video but it is not playable due to creator not allowing embedding. After searching mulitple videos and none working. I recorded the video and saved it locally to play.
+1. Embeding Youtube video but it is not playable due to creator not allowing embedding. After searching mulitple videos and none working. I recorded the video and uploaded to my own Youtube channel. However, Youtube still detects the similarities and will not work. Hence, I saved the videos locally to play.
 2. Using local videos made it not possible to remove the progress bar of the video when it is not hovered.
 
 ## Credits

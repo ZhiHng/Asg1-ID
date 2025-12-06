@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- NAVIGATION BAR -->
         <header>
             <img id="logo" src="imgs/logo.png" alt="Image of Imagine Dragons Logo">
             <nav>
@@ -27,6 +28,7 @@
                 <a href=#songs class="tab-link">Songs</a>
             </nav>
         </header>
+        <!-- HOME TAB -->
         <section id="home" class="tab-content">
             <div id="mainImg">
                 <img id="homeImg" src="imgs/homeImg.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
@@ -77,18 +79,19 @@
             <div id="contacts">
                 <p>
                     If you are using a screen reader and are having problems using this website, please call 65+ 91828465 for assistance.<br>
-                    For collaborations and inquiries, please email imaginedragons@gmail.com.
+                    For collaborations and enquiries, please email imaginedragons@gmail.com.
                 </p>
                 <div id="socials">
-                    <a href="https://www.youtube.com/@ImagineDragons"><img src="imgs/youtube.png" alt="Imagine Dragons Youtube Channel"></a>
-                    <a href="https://www.tiktok.com/@imaginedragons"><img src="imgs/tiktok.png" alt="Imagine Dragons Tiktok Channel"></a>
-                    <a href="https://www.instagram.com/imaginedragons/"><img src="imgs/instagram.png" alt="Imagine Dragons Instagram Channel"></a>
-                    <a href="https://www.facebook.com/ImagineDragons/"><img src="imgs/facebook.png" alt="Imagine Dragons Facebook Channel"></a>
-                    <a href="https://music.apple.com/us/artist/imagine-dragons/358714030"><img src="imgs/apple.png" alt="Imagine Dragons Apple Music Channel"></a>
-                    <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=5bR3hBdqST-OJcTDtW3gxg"><img src="imgs/spotify.png" alt="Imagine Dragons Spotify Channel"></a>
+                    <a href="https://www.youtube.com/@ImagineDragons" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" alt="Imagine Dragons Youtube Channel"></a> <!--target="_blank" opens link in another tab-->
+                    <a href="https://www.tiktok.com/@imaginedragons" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" alt="Imagine Dragons Tiktok Channel"></a> <!--rel="noopener noreferrer" adds more security so that the opened tab cannot reference this website-->
+                    <a href="https://www.instagram.com/imaginedragons/" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" alt="Imagine Dragons Instagram Channel"></a>
+                    <a href="https://www.facebook.com/ImagineDragons/" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" alt="Imagine Dragons Facebook Channel"></a>
+                    <a href="https://music.apple.com/us/artist/imagine-dragons/358714030" target="_blank" rel="noopener noreferrer"><img src="imgs/apple.png" alt="Imagine Dragons Apple Music Channel"></a>
+                    <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=5bR3hBdqST-OJcTDtW3gxg" target="_blank" rel="noopener noreferrer"><img src="imgs/spotify.png" alt="Imagine Dragons Spotify Channel"></a>
                 </div>
             </div>
         </section>
+        <!-- CONCERTS TAB -->
         <section id="concerts" class="tab-content">
             <div id="loomPreview">
                 <img src="imgs/loomWorldTour.webp" alt="Image of Imagine Dragons LOOM World Tour">
@@ -150,6 +153,7 @@
                 <input type="button" class="buttonConcert" value="Purchase">
             </section>
         </section>
+        <!-- MERCH TAB -->
         <section id="merch" class="tab-content">
             <div id="category">
                 <h1 id="AllMerch">All Merch</h1>
@@ -158,12 +162,11 @@
                 <h1 id="Accessories">Accessories</h1>
             </div>
             <div id="merchShop">
-                
                 <a href=#merchCheckout><img src="imgs/shoppingBag.png" alt="Shopping bag icon"></a>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/feelItInMyBonesSkeletonTee.png" alt="Feel It In My Bones Skeleton Tee">
                     <p>Feel It In My Bones Skeleton Tee<br>$30</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="buttonMerch" value="ADD TO CART"> <!--value is the text on the button-->
                 </div>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/hollywoodBowlBlueEventTee.png" alt="Hollywood Bowl Blue Event Tee">
@@ -239,7 +242,7 @@
             <section id="merchCheckout">
                 <div id="paymentDetails">
                     <h3>Your Details</h3>
-                    <input type="text" id="email" placeholder="Enter your email">
+                    <input type="text" id="email" placeholder="Enter your email"> <!--placeholder is the text shown in the input box when nothing is inputted-->
                     <input type="text" id="name" placeholder="Enter your full name">
                     <input type="text" id="address" placeholder="Enter your address">
                     <input type="text" id="creditcard" placeholder="Enter your credit card information">
@@ -248,7 +251,7 @@
                 </div>
                 <div id="cartSection">
                     <h3>Your Cart</h3>
-                    <textarea id="cart" readonly placeholder="Your Cart is Empty"></textarea>
+                    <textarea id="cart" readonly placeholder="Your Cart is Empty"></textarea> <!--readonly ensures the user cannot edit the contents-->
                     <div>
                         <input type="button" id="clearCart" value="Empty Cart">
                         <input type="button" id="purchaseMerch" value="Purchase">
@@ -256,11 +259,12 @@
                 </div>
             </section>
         </section>
+        <!-- SONGS TAB -->
         <section id="songs" class="tab-content">
             <h2>Top Songs</h2>
             <section>
                 <div>
-                    <video src="vids/believer.mp4" controls poster="imgs/believer.jpg">
+                    <video src="vids/believer.mp4" controls poster="imgs/believer.jpg"> <!--controls allows user to fullscreen, progress bar etc. poster is the thumbnail-->
                         Your browser does not support this video.
                     </video>
                     <p>Imagine Dragons - Believer</p>
@@ -300,10 +304,11 @@
                 </div>
             </section>
         </section>
+        <!-- FOOTER -->
         <footer>
             <p>Copyright &copy; 2025 Imagine Dragons Music</p>
             <p>Last Updated 7 December 2025</p>
         </footer>
-        <script src="script.js" defer></script>
+        <script src="script.js" defer></script> <!--defer ensures the JavaScript file will only run when the whole site loads finish-->
     </body>
 </html>

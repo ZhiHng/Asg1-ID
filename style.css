@@ -1,719 +1,618 @@
 html {
-    font-size: clamp(7px, 1.2vw, 22px);
-    scroll-behavior: smooth;
+	font-size: clamp(7px, 1.2vw, 22px); /*7px is the minimum font size and 22px is the max. 1.2vw is how steep or fast it transitions from the min to max based on each pixel of the screen scaled*/
+	scroll-behavior: smooth;
 }
-
 #about h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(200, 200, 200);
+	text-align: center;
+	font-size: 2rem;
+	color: rgb(200, 200, 200);
 }
-
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgb(200, 200, 200);
+	text-align: center;
+	font-size: 2.5rem;
+	color: rgb(200, 200, 200);
 }
-
 h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgb(200, 200, 200);
+	text-align: center;
+	font-size: 1.5rem;
+	color: rgb(200, 200, 200);
 }
-
 p {
-    font-size: 1rem;
+	font-size: 1rem;
 }
-
 * {
-    box-sizing: border-box;
-    font-family: 'Century Gothic','Montserrat', sans-serif;
+	box-sizing: border-box;
+	font-family: 'Century Gothic','Montserrat', sans-serif;
 }
-
 .tab-content {
-    display: none !important;
+	display: none !important;
 }
-
 .tab-content.active {
-    display: block !important;
+	display: block !important;
 }
-
 .tab-link.active {
-    color: rgb(73, 182, 178);
+	color: rgb(73, 182, 178);
 }
-
 footer {
-    width: 100%;
-    height: 3rem;
-    background: #2a2a2a;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	width: 100%;
+	height: 3rem;
+	background: #2a2a2a;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
-
 footer p {
-    margin: 0 1.5rem;
-    font-size: 0.7rem;
-    color: rgb(170, 170, 170);
+	margin: 0 1.5rem;
+	font-size: 0.7rem;
+	color: rgb(170, 170, 170);
 }
-
 header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #2a2a2a;
-    height: 4rem;
-    align-items: center;
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: #2a2a2a;
+	height: 4rem;
+	align-items: center;
 }
-
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	flex: 1;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	position: relative;
 }
-
 nav a {
-    flex: 1;
-    text-align: center;
-    color: rgb(200, 200, 200);
-    text-decoration: none;
+	flex: 1;
+	text-align: center;
+	color: rgb(200, 200, 200);
+	text-decoration: none;
 }
-
 #merchDropdown {
-    position: relative;
-    flex: 1;
-    text-align: center;
+	position: relative;
+	flex: 1;
+	text-align: center;
 }
-
 #merchSubmenus {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #2a2a2a;
-    z-index: 200;
-    color: rgb(200, 200, 200);
-    width: 100%;
-    height: 10.5rem;
-    padding:1.5rem;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #2a2a2a;
+	z-index: 200;
+	color: rgb(200, 200, 200);
+	width: 100%;
+	height: 10.5rem;
+	padding:1.5rem;
 }
-
 #merchCheckout {
-    padding-top: 5rem;
+	padding-top: 5rem;
 }
-
 #merchSubmenus a {
-    margin: 0.5rem 0rem;
+	margin: 0.5rem 0rem;
 }
-
 #merchDropdown:hover #merchSubmenus , #merchDropdown:active #merchSubmenus{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
-
 #logo {
-    height: 2.5rem;
-    width: auto;
-    margin: 0.5rem 1rem;
+	height: 2.5rem;
+	width: auto;
+	margin: 0.5rem 1rem;
 }
-
 #homeImg {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
-
 #home {
-    align-items: center;
+	align-items: center;
 }
-
 #bandName {
-    z-index: 10;
-    position: absolute;
-    padding: 15%;
-    padding-bottom: 20%;
-    width: 100%;
-    height: auto;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	z-index: 10;
+	position: absolute;
+	padding: 15%;
+	padding-bottom: 20%;
+	width: 100%;
+	height: auto;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*since position absolute is based the top left corner positions of the parent and child, we need to translate(-50%) to move back 50% of the element to really center it*/
 }
-
 #about {
-    display: flex;
-    flex-direction: column;
-    color: rgb(200, 200, 200);
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: rgb(200, 200, 200);
+	text-align: center;
 }
-
 #about p {
-    line-height: 1.5;
-    margin: 0% 15%;
+	line-height: 1.5;
+	margin: 0% 15%;
 }
-
 #about div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0% 2.5%;
-    flex-direction: row;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0% 2.5%;
+	flex-direction: row;
 }
-
 #about img {
-    width: 40%;
-    margin: 3% 2.5% 5% 2.5%;
-    height: auto;
+	width: 40%;
+	margin: 3% 2.5% 5% 2.5%;
+	height: auto;
 }
-
 .songHighlights p {
-    width: 30%;
-    margin: 0 0 2rem 0!important;
+	width: 30%;
+	margin: 0 0 2rem 0!important;
 }
-
 #contacts {
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #181818;
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #181818;
 }
-
 #contacts p {
-    color: rgb(200, 200, 200);
-    font-size: 0.8rem;
-    margin-left: 1rem;
-    line-height: 1.5;
+	color: rgb(200, 200, 200);
+	font-size: 0.8rem;
+	margin-left: 1rem;
+	line-height: 1.5;
 }
-
 #socials {
-    display: flex;
-    flex-wrap: wrap;
-    width: 21rem;
-    margin-right: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	width: 21rem;
+	margin-right: 1rem;
 }
-
 #contacts img {
-    width: 2.5rem;
-    height: auto;
-    margin: 0.5rem;
+	width: 2.5rem;
+	height: auto;
+	margin: 0.5rem;
 }
-
 body {
-    background-color: black;
+	background-color: black;
 }
-
 section {
-    scroll-margin-top: 4rem;
+	scroll-margin-top: 4rem;
 }
-
 #concerts {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-
 #loomPreview {
-    display: flex;
-    position: relative;
-    flex-direction: row;
+	display: flex;
+	position: relative;
+	flex-direction: row;
 }
-
 #concerts img {
-    width: 80%;
-    height: auto;
-    position: relative;
-    left: -5%;
+	width: 80%;
+	height: auto;
+	position: relative;
+	left: -5%;
 }
-
 #info {
-    display: flex;
-    top: 0;
-    left: 65%;
-    position: absolute;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
-    width: 35%;
-    height: 100%;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+	display: flex;
+	top: 0;
+	left: 65%;
+	position: absolute;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+	width: 35%;
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
 }
-
 .concertText {
-    margin: 5% 5% 0% 18%;
-    color: rgb(200, 200, 200);
-    text-align: center;
-    line-height: 1.5;
+	margin: 5% 5% 0% 18%;
+	color: rgb(200, 200, 200);
+	text-align: center;
+	line-height: 1.5;
 }
-
 #concertInfo {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin-left: auto;
-    margin-right: 2.5%;
-    justify-content: space-evenly;
-    line-height: 3;
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin-left: auto;
+	margin-right: 2.5%;
+	justify-content: space-evenly;
+	line-height: 3;
 }
-
 #date {
-    right: 0;
-    text-align: right;
-    color: rgb(200, 200, 200);
-    margin-right: 3%;
+	right: 0;
+	text-align: right;
+	color: rgb(200, 200, 200);
+	margin-right: 3%;
 }
-
 #location {
-    left: 0;
-    color: rgb(200, 200, 200);
-    text-align: left;
-    margin-left: 2%;
+	left: 0;
+	color: rgb(200, 200, 200);
+	text-align: left;
+	margin-left: 2%;
 }
-
 #mainImg {
-    position: relative;
-    flex: 1;
-    display: flex;
+	position: relative;
+	flex: 1;
+	display: flex;
 }
-
 #concertDetails {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
 }
-
 #concertDetails div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	font-size: 1rem;
 }
-
 #concertDetails div label {
-    margin-right: 0.4rem;
+	margin-right: 0.4rem;
 }
-
 #ticketCheckout {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    height: 33rem;
-    padding: 3% 10%;
-    margin-bottom: 5rem;
-    justify-content: space-evenly;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	height: 33rem;
+	padding: 3% 10%;
+	margin-bottom: 5rem;
+	justify-content: space-evenly;
 }
-
 #ticketCheckout div {
-    margin: 1rem 2rem;
+	margin: 1rem 2rem;
 }
-
 #ticketCheckout select, input {
-    background-color: #2a2a2a;
-    color: rgb(200, 200, 200);
-    border-color: #3e3e3e;
-    border-radius: 10px;
-    border-width: 0.2rem;
-    text-align: center;
+	background-color: #2a2a2a;
+	color: rgb(200, 200, 200);
+	border-color: #3e3e3e;
+	border-radius: 10px;
+	border-width: 0.2rem;
+	text-align: center;
 }
-
 .buttonConcert {
-    position: absolute;
-    text-align: center;
-    background-color: #2a2a2a;
-    color: rgb(200, 200, 200);
-    border-color: #3e3e3e;
-    border-radius: 30px !important;
-    border-width: 0.2rem;
-    text-align: center;
-    height: 3rem;
-    width: 10rem;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
+	position: absolute;
+	text-align: center;
+	background-color: #2a2a2a;
+	color: rgb(200, 200, 200);
+	border-color: #3e3e3e;
+	border-radius: 30px !important;
+	border-width: 0.2rem;
+	text-align: center;
+	height: 3rem;
+	width: 10rem;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%);
 }
-
 #errorMsgConcert {
-    height: 2rem;
+	height: 2rem;
 }
-
 label {
-    color: rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
 }
-
 #merch {
-    display: flex;
-    flex: 1;
-    width: 100%;
+	display: flex;
+	flex: 1;
+	width: 100%;
 }
-
 #merchShop {
-    display: flex;
-    flex: 1;
-    width: 90%;
-    margin: auto;
-    justify-content: space-evenly;
-    flex-direction: row; 
-    flex-wrap: wrap;
+	display: flex;
+	flex: 1;
+	width: 90%;
+	margin: auto;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
-
 #merchShop div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 425px;
-    margin: 2%;
-    color: rgb(200, 200, 200);
-    text-align: center;
-    line-height: 1.5rem;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	height: 425px;
+	margin: 2%;
+	color: rgb(200, 200, 200);
+	text-align: center;
+	line-height: 1.5rem;
+	justify-content: space-between;
 }
-
 #merchShop img {
-    width: 100%;
-    height: auto;
-    margin: 2%;
+	width: 100%;
+	height: auto;
+	margin: 2%;
 }
-
 #merchShop p {
-    font-size: 1.2rem;
-    height: 4rem;
+	font-size: 1.2rem;
+	height: 4rem;
 }
-
 #merchShop a {
-    position: fixed;
-    top: 5.5rem;
-    right: 1.5rem;
-    width: 4rem;
-    height: 4rem;
+	position: fixed;
+	top: 5.5rem;
+	right: 1.5rem;
+	width: 4rem;
+	height: 4rem;
 }
-
 #merchShop a img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
-
 #merchCheckout {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    color: rgb(200, 200, 200);
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	color: rgb(200, 200, 200);
 }
-
 #paymentDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
-
 #paymentDetails input {
-    margin: 5%;
-    width: 20rem;
-    background-color:#2a2a2a;
-    border-color: #3e3e3e;
-    border-width: 0.2rem;
-    border-radius: 10px;
-    font-size: 1rem;
+	margin: 5%;
+	width: 20rem;
+	background-color:#2a2a2a;
+	border-color: #3e3e3e;
+	border-width: 0.2rem;
+	border-radius: 10px;
+	font-size: 1rem;
 }
-
 #paymentDetailsC {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
-
 #paymentDetailsC input {
-    margin: 5%;
-    width: 20rem;
-    background-color:#2a2a2a;
-    border-color: #3e3e3e;
-    border-width: 0.2rem;
-    border-radius: 10px;
-    font-size: 1rem;
+	margin: 5%;
+	width: 20rem;
+	background-color:#2a2a2a;
+	border-color: #3e3e3e;
+	border-width: 0.2rem;
+	border-radius: 10px;
+	font-size: 1rem;
 }
-
 #cartSection {
-    width: 40rem;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    font-size: 1rem;
+	width: 40rem;
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	font-size: 1rem;
 }
-
 #cartSection div {
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 0;
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 0;
 }
-
 #cartSection input {
-    background-color: #2a2a2a;
-    border-color: #3e3e3e;
-    border-radius: 10px;
-    border-width: 0.2rem;
+	background-color: #2a2a2a;
+	border-color: #3e3e3e;
+	border-radius: 10px;
+	border-width: 0.2rem;
 }
 #cart {
-    width: 90%;
-    height: 20rem;
-    background-color:black;
-    border-color: #2a2a2a;
-    border-width: 0.2rem;
-    border-radius: 10px;
-    color: rgb(200, 200, 200);
+	width: 90%;
+	height: 20rem;
+	background-color:black;
+	border-color: #2a2a2a;
+	border-width: 0.2rem;
+	border-radius: 10px;
+	color: rgb(200, 200, 200);
 }
-
 #merchShop input {
-    background-color: #2a2a2a;
-    border-color: #3e3e3e;
-    border-radius: 10px;
-    border-width: 0.2rem;
+	background-color: #2a2a2a;
+	border-color: #3e3e3e;
+	border-radius: 10px;
+	border-width: 0.2rem;
 }
-
 #songs {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    color: rgb(200, 200, 200);
-    width: 80%;
-    margin: 3rem auto;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	color: rgb(200, 200, 200);
+	width: 80%;
+	margin: 3rem auto;
 }
-
 #songs section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2rem;
-    text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 2rem;
+	text-align: center;
 }
-
 #songs video {
-    margin: 0.2rem 1.5rem;
-    width: 30rem;
-    height: 16.875rem;
+	margin: 0.2rem 1.5rem;
+	width: 30rem;
+	height: 16.875rem;
 }
-
 #songs p {
-    margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
 }
-
 @media (max-width: 600px) {
-    html {
-        font-size: clamp(8px, 2vw, 16px);
-    }
-
-    #loomPreview {
-        flex-direction: column;
-        position: static;
-    }
-
-    #concerts img {
-        width: 100%;
-        position: static;
-        left: 0%;
-    }
-
-    #info {
-        position: static;
-        width: 100%;
-        height: 20rem;
-        background: black;
-        display: flex;
-    }
-    .concertText {
-        margin: 4% 0% 0% 0%;
-        color: rgb(200, 200, 200);
-        text-align: center;
-        line-height: 1.5;
-    }
-    #concertInfo {
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
-        line-height: 2.5;
-    }
-
-    #about div {
-        flex-direction: column;
-    }
-
-    #about img {
-        width: 80%;
-        margin: 3% 2.5% 5% 2.5%;
-        height: auto;
-        flex: 1;
-    }
-
-    #merchShop div {
-        width: 150px;
-        height: 275px;
-    }
-
-    #ticketCheckout {
-        flex-direction: column;
-        height: 55rem;
-        padding: 3% 5%;
-        margin-bottom: 5rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #paymentDetailsC input{
-        margin: 2%;
-        width: 30rem;
-        background-color:#2a2a2a;
-        border-color: #3e3e3e;
-        border-width: 0.2rem;
-        border-radius: 10px;
-        font-size: 1.5rem;
-    }
-
-    .buttonConcert {
-        position: static;
-        transform: translate(0);
-        height: 8rem;
-        width: 15rem;
-        padding: 0.5rem;
-        margin: 0 auto;
-        margin-bottom: 3rem !important;
-    }
-
-    #concertDetails {
-        width: 90%;
-        align-items: center;
-    }
-
-    #concertDetails div {
-        width: 100%;
-        justify-content: space-evenly;
-        font-size: 1.5rem;
-    }
-
-    #merchSubmenus a {
-        margin: 1rem 0rem;
-    }
-
-    #merchSubmenus {
-        height: 14.5rem;
-        padding:1.5rem;
-    }
-
-    .songHighlights p {
-        width: 80%;
-        margin: 0 0 2rem 0!important;
-    }
-
-    #songs section {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-top: 2rem;
-        justify-content: center;
-    }
-
-    #songs video {
-        margin: 1.5rem 0 !important;
-    }
-
-    #contacts {
-        height: 8rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: #181818;
-    }
-
-    #socials {
-        display: flex;
-        flex-wrap: wrap;
-        width: 14rem;
-        margin-right: 0rem;
-    }
-
-    #contacts p {
-        color: rgb(200, 200, 200);
-        font-size: 0.8rem;
-        margin-left: 1rem;
-        line-height: 2;
-    }
-
-    #contacts img {
-        width: 2.5rem;
-        height: auto;
-        margin: 0.5rem;
-    }
+	html {
+		font-size: clamp(8px, 2vw, 16px);
+	}
+	#loomPreview {
+		flex-direction: column;
+		position: static;
+	}
+	#concerts img {
+		width: 100%;
+		position: static;
+		left: 0%;
+	}
+	#info {
+		position: static;
+		width: 100%;
+		height: 20rem;
+		background: black;
+		display: flex;
+	}
+	.concertText {
+		margin: 4% 0% 0% 0%;
+		color: rgb(200, 200, 200);
+		text-align: center;
+		line-height: 1.5;
+	}
+	#concertInfo {
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-evenly;
+		line-height: 2.5;
+	}
+	#about div {
+		flex-direction: column;
+	}
+	#about img {
+		width: 80%;
+		margin: 3% 2.5% 5% 2.5%;
+		height: auto;
+		flex: 1;
+	}
+	#merchShop div {
+		width: 150px;
+		height: 275px;
+	}
+	#ticketCheckout {
+		flex-direction: column;
+		height: 55rem;
+		padding: 3% 5%;
+		margin-bottom: 5rem;
+		justify-content: center;
+		align-items: center;
+	}
+	#paymentDetailsC input{
+		margin: 2%;
+		width: 30rem;
+		background-color:#2a2a2a;
+		border-color: #3e3e3e;
+		border-width: 0.2rem;
+		border-radius: 10px;
+		font-size: 1.5rem;
+	}
+	.buttonConcert {
+		position: static;
+		transform: translate(0);
+		height: 8rem;
+		width: 15rem;
+		padding: 0.5rem;
+		margin: 0 auto;
+		margin-bottom: 3rem !important;
+	}
+	#concertDetails {
+		width: 90%;
+		align-items: center;
+	}
+	#concertDetails div {
+		width: 100%;
+		justify-content: space-evenly;
+		font-size: 1.5rem;
+	}
+	#merchSubmenus a {
+		margin: 1rem 0rem;
+	}
+	#merchSubmenus {
+		height: 14.5rem;
+		padding:1.5rem;
+	}
+	.songHighlights p {
+		width: 80%;
+		margin: 0 0 2rem 0!important;
+	}
+	#songs section {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-top: 2rem;
+		justify-content: center;
+	}
+	#songs video {
+		margin: 1.5rem 0 !important;
+	}
+	#contacts {
+		height: 8rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #181818;
+	}
+	#socials {
+		display: flex;
+		flex-wrap: wrap;
+		width: 14rem;
+		margin-right: 0rem;
+	}
+	#contacts p {
+		color: rgb(200, 200, 200);
+		font-size: 0.8rem;
+		margin-left: 1rem;
+		line-height: 2;
+	}
+	#contacts img {
+		width: 2.5rem;
+		height: auto;
+		margin: 0.5rem;
+	}
 }
-    
-
 @media (max-width: 800px) {
-    #songs video {
-        width: 34rem;
-        height: 19.125rem;
-        margin: 0.8rem;
-    }
-
-    #songs {
-        width: 85.5%;
-        margin: 3rem auto;
-    }
-
-    #merchCheckout {
-        justify-content: space-evenly;
-        flex-direction: column;
-        color: rgb(200, 200, 200);
-    }
-
-    #paymentDetails input {
-        margin: 1rem;
-        width: 30rem;
-        font-size: 1.5rem;
-    }
-
-    #cartSection {
-        width: 40rem;
-        height: 30rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 1.5rem;
-    }
-
-    #cartSection div {
-        height: 5rem;
-        margin-bottom: 2rem;
-    }
+	#songs video {
+		width: 34rem;
+		height: 19.125rem;
+		margin: 0.8rem;
+	}
+	#songs {
+		width: 85.5%;
+		margin: 3rem auto;
+	}
+	#merchCheckout {
+		justify-content: space-evenly;
+		flex-direction: column;
+		color: rgb(200, 200, 200);
+	}
+	#paymentDetails input {
+		margin: 1rem;
+		width: 30rem;
+		font-size: 1.5rem;
+	}
+	#cartSection {
+		width: 40rem;
+		height: 30rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 1.5rem;
+	}
+	#cartSection div {
+		height: 5rem;
+		margin-bottom: 2rem;
+	}
 }
-
 @media (max-width: 360px) {
-    #contacts {
-        height: 12rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: #181818;
-    }
-
-    #socials {
-        display: flex;
-        flex-wrap: wrap;
-        width: 11rem;
-        margin-right: 0rem;
-    }
+	#contacts {
+		height: 12rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #181818;
+	}
+	#socials {
+		display: flex;
+		flex-wrap: wrap;
+		width: 11rem;
+		margin-right: 0rem;
+	}
 }
