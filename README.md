@@ -2,18 +2,16 @@
 This project is made for Imagine Dragons and it features their history, where and how the band came about. It also features their social media and how to contact them for collaborations. People can buy concert tickets for upcoming concerts and purchase merch from Imagine Dragons on this site. It also showcases the best songs of Imagine Dragons and a few collaboration songs with other artists.
 
 ## Design Process
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 This website is made for Imagine Dragons, a rock band. Therefore, I felt that the color scheme of black is suitable. The band is also interested to sell their merch and concert tickets, therefore they are included in the website. This websites audience is fans of Imagine Dragons and potential fans who wish to learn more about the band's history and the band members, and possibly book them for shows or collaborate with them. This website is useful for them as it provides all of those features all at once in this website. Fans can buy merch and tickets convieniently without having to go from site to site to find what they want. For the font size, I used a professional and geometric font which is similar to the Imagine Dragons logo. In the home tab, I have a large Image of the band along with the band logo to capture the users attention and gives the band a badass look. I added a dropdown tab for the merch tab to filter the merch and make it easier for users to navigate to the category they want.
 
 ### Wireframe
-https://www.figma.com/design/Nk8uW8ZyJhpWMLLwpq9CCB/ID_S10271139C_Chan-Zhi-Hng_Assg1_wireframe?node-id=0-1&t=p8apbxiqkSHgAku7-1
+[ID_S10271139C_Chan-Zhi-Hng_Assg1_wireframe](https://www.figma.com/design/Nk8uW8ZyJhpWMLLwpq9CCB/ID_S10271139C_Chan-Zhi-Hng_Assg1_wireframe?node-id=0-1&t=p8apbxiqkSHgAku7-1)
 
 ## Features
-The home tab consists of the band's image, their history and their their first breakthrough in as a band, some of their best music, and their social media and contact information.
-The concert tab shows the upcoming concerts available and the ticket checkout section.
-The merch tab displays all the merch of the band and a checkout cart system and payment section.
-The songs tab showcases some songs of the bands segmented into categories.
+- The home tab consists of the band's image, their history and their their first breakthrough in as a band, some of their best music, and their social media and contact information.
+- The concert tab shows the upcoming concerts available and the ticket checkout section.
+- The merch tab displays all the merch of the band and a checkout cart system and payment section.
+- The songs tab showcases some songs of the bands segmented into categories.
 
 ### Existing Features
 1. allows users to go to the band's socials by clicking the icons at the bottom of the home tab.
@@ -78,7 +76,7 @@ On different browsers, the concert details, payment of concert tickets, merch an
 
 ## Credits
 ### Content
-The text for the section "home" was copied and modified from the Wikipedia article on Imagine Dragons. https://en.wikipedia.org/wiki/Imagine_Dragons
+The text for the section "home" was copied and modified from the [Wikipedia article on Imagine Dragons.](https://en.wikipedia.org/wiki/Imagine_Dragons)
 
 ### Media
 The photos used in this site were obtained from ...
@@ -92,4 +90,4 @@ The photos used in this site were obtained from ...
 - https://chatgpt.com/
 
 ### Acknowledgements
-I received inspiration for this project from (https://shop.imaginedragonsmusic.com/)
+I received inspiration for this project from [Imagine Dragons' Official Website](https://shop.imaginedragonsmusic.com/)
