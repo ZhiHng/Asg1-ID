@@ -22,12 +22,13 @@ links.forEach(link => {
   	});
 });
 
-const Clocation = document.getElementById("concertLocation");
-const dateInput = document.getElementById("concertDate");
-const timeInput = document.getElementById("concertTime");
+const Clocation = document.getElementById("concert-location");
+const dateInput = document.getElementById("concert-date");
+const timeInput = document.getElementById("concert-time");
+dateInput.disabled = true;
 
 Clocation.addEventListener("change", function() { 
-	if (this.value === "kuala lumpur") {
+	if (this.value === "kuala-lumpur") {
 		dateInput.min = "2024-11-21";
 		dateInput.max = "2024-11-21";
 		dateInput.value = "2024-11-21"; //auto sets the date when location selected
@@ -43,7 +44,7 @@ Clocation.addEventListener("change", function() {
 		dateInput.min = "2024-11-28";
 		dateInput.max = "2024-11-28";
 		dateInput.value = "2024-11-28";
-	} else if (this.value === "hong kong") {
+	} else if (this.value === "hong-kong") {
 		dateInput.min = "2024-11-30";
 		dateInput.max = "2024-12-01";
 		dateInput.value = "2024-11-30";
@@ -76,7 +77,7 @@ dateInput.addEventListener("change", function() {
 	if (this.value === '') { //if date not selected (cleared), time will have nothing
 		timeInput.value = '';
 	} else {
-		if (Clocation.value === "kuala lumpur") { //auto fills in date based on location selected
+		if (Clocation.value === "kuala-lumpur") { //auto fills in date based on location selected
 			dateInput.min = "2024-11-21";
 			dateInput.max = "2024-11-21";
 			dateInput.value = "2024-11-21";
@@ -92,10 +93,9 @@ dateInput.addEventListener("change", function() {
 			dateInput.min = "2024-11-28";
 			dateInput.max = "2024-11-28";
 			dateInput.value = "2024-11-28";
-		} else if (Clocation.value === "hong kong") {
+		} else if (Clocation.value === "hong-kong") {
 			dateInput.min = "2024-11-30";
 			dateInput.max = "2024-12-01";
-			dateInput.value = "2024-11-30";
 		} else if (Clocation.value === "tokyo") {
 			dateInput.min = "2024-12-03";
 			dateInput.max = "2024-12-03";
@@ -106,14 +106,14 @@ dateInput.addEventListener("change", function() {
 		}
 		if (this.value === 'tokyo') {
 			timeInput.value = '7.00pm local time';
-		} else {
+		} else if (this.value !== "") {
 			timeInput.value = '8.00pm local time';
 		}
 	}
 });
 
 const cartText = document.getElementById('cart')
-const addToCart = document.querySelectorAll('.buttonMerch')
+const addToCart = document.querySelectorAll('.button-merch')
 var cart = [] //clears cart when website loads
 cartText.value = '' //clears cart preview when website loads
 var grandTotal = 0 //reset the pricing when website loads
@@ -135,20 +135,20 @@ addToCart.forEach(button => {
   	});
 });
 
-const clearCart = document.getElementById('clearCart')
+const clearCart = document.getElementById('clear-cart')
 clearCart.addEventListener('click', function() {
 	cart = []; //clear cart and remove all text of the cart display and reset the grandtotal price
 	grandTotal = 0;
 	cartText.value = '';
 });
 
-const merchTabs = document.querySelectorAll('#merchDropdown div a')
+const merchTabs = document.querySelectorAll('#merch-dropdown div a')
 const category = document.querySelector('#category')
-const merchType = document.querySelectorAll('#merchShop div')
+const merchType = document.querySelectorAll('#merch-shop div')
 
 merchTabs.forEach(dropdown => {
 	dropdown.addEventListener('click', function() {
-		let filter = this.getAttribute('id').slice(3); //since my submenus tab has id of "navHome" for example, I need to remove the nav which is the 3 letters in front
+		let filter = this.getAttribute('id').slice(4); //since my submenus tab has id of "nav-home" for example, I need to remove the nav- which is the 4 letters in front
 		const target = category.querySelector(`#${filter}`); //set the target to the category header I want to show
 		
 		const others = category.querySelectorAll('h1'); //get all h1 which is all the category items
@@ -156,7 +156,7 @@ merchTabs.forEach(dropdown => {
 			title.style.display = 'none'; //hide all the headers/categories. title.style.display is used instead of .classList.add('active') as headers do not have that property
 		});
 		if (target === null) {
-			target = category.querySelector(`#AllMerch`); //just incase nothing is selected, the category will always be All Merch
+			target = category.querySelector(`#allmerch`); //just incase nothing is selected, the category will always be All Merch
 		}
 		target.style.display = 'block'; //show the header/category that is clicked
 
@@ -171,8 +171,8 @@ merchTabs.forEach(dropdown => {
 	});
 });
 
-const purchaseMerch = document.getElementById('purchaseMerch')
-const errorMsg = document.getElementById('errorMsg')
+const purchaseMerch = document.getElementById('purchase-merch')
+const errorMsg = document.getElementById('error-msg')
 
 purchaseMerch.addEventListener('click', function() {
 	const email = document.getElementById('email').value.trim(); //remove whitespace in textbox
@@ -227,15 +227,15 @@ purchaseMerch.addEventListener('click', function() {
 	cartText.value = '';
 });
 
-const purchaseTicket = document.getElementsByClassName('buttonConcert')[0];
-const errorMsgConcert = document.getElementById('errorMsgConcert');
+const purchaseTicket = document.getElementsByClassName('button-concert')[0];
+const errorMsgConcert = document.getElementById('error-msg-concert');
 
 purchaseTicket.addEventListener('click', function() {
-	const emailC = document.getElementById('emailConcert').value.trim();
-	const nameC = document.getElementById('nameConcert').value.trim();
-	const addressC = document.getElementById('addressConcert').value.trim();
-	const creditcardC = document.getElementById('creditcardConcert').value.trim();
-	const ccvC = document.getElementById('ccvConcert').value.trim();
+	const emailC = document.getElementById('email-concert').value.trim();
+	const nameC = document.getElementById('name-concert').value.trim();
+	const addressC = document.getElementById('address-concert').value.trim();
+	const creditcardC = document.getElementById('creditcard-concert').value.trim();
+	const ccvC = document.getElementById('ccv-concert').value.trim();
 
 	if (Clocation.value === '') {
 		errorMsgConcert.textContent = 'Please enter a concert location';

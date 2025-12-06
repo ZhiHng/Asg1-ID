@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--sets the language of the website so the internet know this is an english website and would filter based on people's searches-->
     <head>
         <title>Imagine Dragons Website</title>
         <link href="Normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--records the device width for @media in css to work-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google font import-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
@@ -16,13 +16,13 @@
             <nav>
                 <a href=#home class="tab-link">Home</a>
                 <a href=#concerts class="tab-link">Concerts</a>
-                <div id="merchDropdown">
-                    <a id="navMerch">Merch</a>
-                    <div id="merchSubmenus">
-                        <a href=#merch class="tab-link" id="navAllMerch">All Merch</a>
-                        <a href=#merch class="tab-link" id="navTShirt">T-Shirts</a>
-                        <a href=#merch class="tab-link" id="navHoodie">Hoodies</a>
-                        <a href=#merch class="tab-link" id="navAccessories">Accessories</a>
+                <div id="merch-dropdown">
+                    <a id="nav-merch">Merch</a>
+                    <div id="merch-submenus">
+                        <a href=#merch class="tab-link" id="nav-allmerch">All Merch</a>
+                        <a href=#merch class="tab-link" id="nav-tshirt">T-Shirts</a>
+                        <a href=#merch class="tab-link" id="nav-hoodie">Hoodies</a>
+                        <a href=#merch class="tab-link" id="nav-accessories">Accessories</a>
                     </div>
                 </div>
                 <a href=#songs class="tab-link">Songs</a>
@@ -30,9 +30,9 @@
         </header>
         <!-- HOME TAB -->
         <section id="home" class="tab-content">
-            <div id="mainImg">
-                <img id="homeImg" src="imgs/homeImg.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
-                <img id="bandName" src="imgs/logo2.png" alt="Logo of Imagine Dragons">
+            <div id="main-img">
+                <img id="home-img" src="imgs/home-img.jpg" alt="Professional Image of the Band Members of Imagine Dragons">
+                <img id="band-name" src="imgs/logo2.png" alt="Logo of Imagine Dragons">
             </div>
             <div id="about">
                 <h2>About</h2>
@@ -46,8 +46,8 @@
                     the record for most weeks charted on the Billboard Hot 100.
                 </p>
                 <div>
-                    <img src="imgs/biteOfLasVegasFestival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
-                    <img src="imgs/biteOfLasVegasFestival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
+                    <img src="imgs/bite-of-las-vegas-festival1.jpg" alt="Bite of Las Vegas Festival 2009 Image 1">
+                    <img src="imgs/bite-of-las-vegas-festival2.jpg" alt="Bite of Las Vegas Festival 2009 Image 2">
                 </div>
                 <p>
                     The band finished recording their debut album Night Visions in the summer of 2012 at Studio X inside Palms 
@@ -60,14 +60,14 @@
                     The album produced three tracks that reached the Billboard Top 40, four tracks in the ARIA Top 40, 
                     and five tracks charting in the UK Top 40.
                 </p>
-                <div class="songHighlights">
+                <div class="song-highlights">
                     <img src="imgs/believer.jpg" alt="Believer by Imagine Dragons Thumbnail">
                     <p>
                         Beliver by Imagine Dragons was released on February 1st 2017 and serves as the lead single from their third studio album, Evolve.
                         It currently has about 2.9 billion views on Youtube and won Top Rock Song at the 2018 Billboard Music Awards.
                     </p>
                 </div>
-                <div class="songHighlights">
+                <div class="song-highlights">
                     <img src="imgs/thunder.jpg" alt="Thunder by Imagine Dragons Thumbnail">
                     <p>
                         Thunder by Imagine Dragons was released on the April 27th 2017 and is the second single of their third studio album, Evolve.
@@ -84,7 +84,7 @@
                 <div id="socials">
                     <a href="https://www.youtube.com/@ImagineDragons" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" alt="Imagine Dragons Youtube Channel"></a> <!--target="_blank" opens link in another tab-->
                     <a href="https://www.tiktok.com/@imaginedragons" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" alt="Imagine Dragons Tiktok Channel"></a> <!--rel="noopener noreferrer" adds more security so that the opened tab cannot reference this website-->
-                    <a href="https://www.instagram.com/imaginedragons/" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" srcset="imgs/instagram.png 1x, imgs/instagramHigh.png 2x" alt="Imagine Dragons Instagram Channel"></a>
+                    <a href="https://www.instagram.com/imaginedragons/" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" srcset="imgs/instagram.png 1x, imgs/instagram-high.png 2x" alt="Imagine Dragons Instagram Channel"></a>
                     <a href="https://www.facebook.com/ImagineDragons/" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" alt="Imagine Dragons Facebook Channel"></a>
                     <a href="https://music.apple.com/us/artist/imagine-dragons/358714030" target="_blank" rel="noopener noreferrer"><img src="imgs/apple.png" alt="Imagine Dragons Apple Music Channel"></a>
                     <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=5bR3hBdqST-OJcTDtW3gxg" target="_blank" rel="noopener noreferrer"><img src="imgs/spotify.png" alt="Imagine Dragons Spotify Channel"></a>
@@ -93,11 +93,11 @@
         </section>
         <!-- CONCERTS TAB -->
         <section id="concerts" class="tab-content">
-            <div id="loomPreview">
-                <img src="imgs/loomWorldTour.webp" alt="Image of Imagine Dragons LOOM World Tour">
+            <div id="loom-preview">
+                <img src="imgs/loom-world-tour.webp" alt="Image of Imagine Dragons LOOM World Tour">
                 <div id="info">
-                    <h2 class="concertText">LOOM World Tour</h2>
-                    <div id="concertInfo">
+                    <h2 class="concert-text">LOOM World Tour</h2>
+                    <div id="concert-info">
                         <p id="location">
                             Kuala Lumpur, Malaysia<br>
                             Bangkok, Thailand<br>
@@ -117,144 +117,144 @@
                     </div>
                 </div>
             </div>
-            <section id="ticketCheckout">
-                <div id="concertDetails">
+            <section id="ticket-checkout">
+                <div id="concert-details">
                     <h3>Concert Details</h3>
                     <div>
-                        <label for="concertLocation">Select a location:</label>
-                        <select id="concertLocation" name="concertLocation">
+                        <label for="concert-location">Select a location:</label>
+                        <select id="concert-location" name="concert-location">
                             <option value="">Select a location</option>
-                            <option value="kuala lumpur">Kuala Lumpur, Malaysia</option>
+                            <option value="kuala-lumpur">Kuala Lumpur, Malaysia</option>
                             <option value="bangkok">Bangkok, Thailand</option>
                             <option value="singapore">Singapore</option>
                             <option value="taipei">Taipei, Taiwan</option>
-                            <option value="hong kong">Hong Kong</option>
+                            <option value="hong-kong">Hong Kong</option>
                             <option value="tokyo">Tokyo, Japan</option>
                         </select>
                     </div>
                     <div>
-                        <label for="concertDate">Choose a concert date:</label>
-                        <input type="date" id="concertDate" name="concertDate">
+                        <label for="concert-date">Choose a concert date:</label>
+                        <input type="date" id="concert-date" name="concert-date">
                     </div>
                     <div>
-                        <label for="concertTime">Concert Time:</label>
-                        <input type="text" id="concertTime" readonly placeholder="Time">
+                        <label for="concert-time">Concert Time:</label>
+                        <input type="text" id="concert-time" readonly placeholder="Time">
                     </div>
                 </div>
-                <div id="paymentDetailsC">
+                <div id="payment-details-concert">
                     <h3>Your Details</h3>
-                    <input type="text" id="emailConcert" placeholder="Enter your email">
-                    <input type="text" id="nameConcert" placeholder="Enter your full name">
-                    <input type="text" id="addressConcert" placeholder="Enter your address">
-                    <input type="text" id="creditcardConcert" placeholder="Enter your credit card information">
-                    <input type="text" id="ccvConcert" placeholder="CCV">
-                    <p id="errorMsgConcert" style="color:red;"></p>
+                    <input type="text" id="email-concert" placeholder="Enter your email">
+                    <input type="text" id="name-concert" placeholder="Enter your full name">
+                    <input type="text" id="address-concert" placeholder="Enter your address">
+                    <input type="text" id="creditcard-concert" placeholder="Enter your credit card information">
+                    <input type="text" id="ccv-concert" placeholder="CCV">
+                    <p id="error-msg-concert" style="color:red;"></p>
                 </div>
-                <input type="button" class="buttonConcert" value="Purchase">
+                <input type="button" class="button-concert" value="Purchase">
             </section>
         </section>
         <!-- MERCH TAB -->
         <section id="merch" class="tab-content">
             <div id="category">
-                <h1 id="AllMerch">All Merch</h1>
-                <h1 id="TShirt">T-Shirts</h1>
-                <h1 id="Hoodie">Hoodies</h1>
-                <h1 id="Accessories">Accessories</h1>
+                <h1 id="allmerch">All Merch</h1>
+                <h1 id="tshirt">T-Shirts</h1>
+                <h1 id="hoodie">Hoodies</h1>
+                <h1 id="accessories">Accessories</h1>
             </div>
-            <div id="merchShop">
-                <a href=#merchCheckout><img src="imgs/shoppingBag.png" srcset="imgs/shoppingBag.png 1x, imgs/shoppingBagHigh.png 2x" alt="Shopping bag icon"></a>
+            <div id="merch-shop">
+                <a href=#merch-checkout><img src="imgs/shopping-bag.png" srcset="imgs/shopping-bag.png 1x, imgs/shopping-bag-high.png 2x" alt="Shopping bag icon"></a>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/feelItInMyBonesSkeletonTee.png" alt="Feel It In My Bones Skeleton Tee">
                     <p>Feel It In My Bones Skeleton Tee<br>$30</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART"> <!--value is the text on the button-->
+                    <input type="button" class="button-merch" value="ADD TO CART"> <!--value is the text on the button-->
                 </div>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/hollywoodBowlBlueEventTee.png" alt="Hollywood Bowl Blue Event Tee">
                     <p>Hollywood Bowl Blue Event Tee<br>$35</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/itsTimeBrownTieDyeLongSleeve.png" alt="Its Time Brown Tie Dye Long Sleeve">
                     <p>Its Time Brown Tie Dye Long Sleeve<br>$40</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/liveHollywoodBowlFilmSunTee.png" alt="Live Hollywood Bowl Film Sun Tee">
                     <p>Live Hollywood Bowl Film Sun Tee<br>$30</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="tshirt">
                     <img src="imgs/merch/tshirt/wingsBrownCrewNeck.png" alt="Wings Brown Crew Neck">
                     <p>Wings Brown Crew Neck<br>$25</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="hoodie">
                     <img src="imgs/merch/hoodie/bonesLetterHoodie.webp" alt="Bones Letter Hoodie">
                     <p>Bones Letter Hoodie<br>$50</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="hoodie">
                     <img src="imgs/merch/hoodie/bonesSkellyHoodie.png" alt="Bones Skelly Hoodie">
                     <p>Bones Skelly Hoodie<br>$50</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="hoodie">
                     <img src="imgs/merch/hoodie/loomButterflyTanHoodie.webp" alt="Loom Butterfly Tan Hoodie">
                     <p>Loom Butterfly Tan Hoodie<br>$50</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="hoodie">
                     <img src="imgs/merch/hoodie/mercuryGlobePulloverHoodie.webp" alt="Mercury Globe Pullover Hoodie">
                     <p>Mercury Globe Pullover Hoodie<br>$55</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="hoodie">
                     <img src="imgs/merch/hoodie/theBrightestSunBeigeHoodie.webp" alt="The Brightest Sun Beige Hoodie">
                     <p>The Brightest Sun Beige Hoodie<br>$45</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="accessories">
                     <img src="imgs/merch/accessories/idBonesSilverNecklace.webp" alt="ID Bones Silver Necklace">
                     <p>ID Bones Silver Necklace<br>$80</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="accessories">
                     <img src="imgs/merch/accessories/loomBlanket.webp" alt="Loom Blanket">
                     <p>Loom Blanket<br>$80</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="accessories">
                     <img src="imgs/merch/accessories/loomyDragonOrnament.webp" alt="Loomy Dragon Ornament">
                     <p>Loomy Dragon Ornament<br>$30</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="accessories">
                     <img src="imgs/merch/accessories/reverseDragonsCorduroyHat.webp" alt="Reverse Dragons Corduroy Hat">
                     <p>Reverse Dragons Corduroy Hat<br>$20</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
                 <div class="accessories">
                     <img src="imgs/merch/accessories/takeMeToTheBeachAcrylicMagnet.webp" alt="Take Me To The Beach Acrylic Magnet">
                     <p>Take Me To The Beach Acrylic Magnet<br>$25</p>
-                    <input type="button" class="buttonMerch" value="ADD TO CART">
+                    <input type="button" class="button-merch" value="ADD TO CART">
                 </div>
             </div>
-            <section id="merchCheckout">
-                <div id="paymentDetails">
+            <section id="merch-checkout">
+                <div id="payment-details">
                     <h3>Your Details</h3>
                     <input type="text" id="email" placeholder="Enter your email"> <!--placeholder is the text shown in the input box when nothing is inputted-->
                     <input type="text" id="name" placeholder="Enter your full name">
                     <input type="text" id="address" placeholder="Enter your address">
                     <input type="text" id="creditcard" placeholder="Enter your credit card information">
                     <input type="text" id="ccv" placeholder="CCV">
-                    <p id="errorMsg" style="color:red;"></p>
+                    <p id="error-msg" style="color:red;"></p>
                 </div>
-                <div id="cartSection">
+                <div id="cart-section">
                     <h3>Your Cart</h3>
                     <textarea id="cart" readonly placeholder="Your Cart is Empty"></textarea> <!--readonly ensures the user cannot edit the contents-->
                     <div>
-                        <input type="button" id="clearCart" value="Empty Cart">
-                        <input type="button" id="purchaseMerch" value="Purchase">
+                        <input type="button" id="clear-cart" value="Empty Cart">
+                        <input type="button" id="purchase-merch" value="Purchase">
                     </div>    
                 </div>
             </section>
@@ -262,7 +262,7 @@
         <!-- SONGS TAB -->
         <section id="songs" class="tab-content">
             <h2>Top Songs</h2>
-            <section>
+            <div class="song-category">
                 <div>
                     <video src="vids/believer.mp4" controls poster="imgs/believer.jpg"> <!--controls allows user to fullscreen, progress bar etc. poster is the thumbnail-->
                         Your browser does not support this video.
@@ -287,9 +287,9 @@
                     </video>
                     <p>Imagine Dragons - Whatever it Takes</p>
                 </div>
-            </section>
+            </div>
             <h2>Collab Songs</h2>
-            <section>
+            <div class="song-category">
                 <div>
                     <video src="vids/enemy.mp4" controls poster="imgs/enemy.jpg">
                         Your browser does not support this video.
@@ -302,7 +302,7 @@
                     </video>
                     <p>Imagine Dragons - Take Me To The Beach (feat. Ado)</p>
                 </div>
-            </section>
+            </div>
         </section>
         <!-- FOOTER -->
         <footer>
