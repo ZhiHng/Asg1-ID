@@ -50,7 +50,7 @@ This website is made for Imagine Dragons, a rock band. Therefore, I felt that th
     5. Try to submit the form when the location is not selected and verify there is an error
     6. Try to clear the date after selecting the location and submitting the form and verify there is an error and that the time input is also cleared
 
-- Payment detials form:
+- Payment details form:
     1. Go to the "Concert" and "Merch" page
     2. Try to enter an email and verify there is an error when no '@' is entered
     3. Try to enter the credit card information and verify there is an error when the input is not 16 numbers
@@ -74,7 +74,7 @@ On different browsers, the concert details, payment of concert tickets, merch an
 ### Problems
 1. Embeding Youtube video but it is not playable due to creator not allowing embedding. After searching mulitple videos and none working. I recorded the video and uploaded to my own Youtube channel. However, Youtube still detects the similarities and will not work. Hence, I saved the videos locally to play.
 2. Using local videos made it not possible to remove the progress bar of the video when it is not hovered.
-3. pushing commits of large video files to github will not work. I downloaded git lfs (large file size) to help me push my video commits.
+3. pushing commits of large video files to github will not work. I downloaded git lfs (large file size) to help me push my video commits and I released the videos on github to be able to play them on the website if the website is loaded from github.
 
 ## Credits
 ### Content
